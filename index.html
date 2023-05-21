@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Patrick+Hand&display=swap');
+
+        html {
+            font-size: 62.7%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(./White-clouds-background-hd.jpg);
+        }
+
+        .up {
+            width: 100%;
+            height: 25vh;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .up #input {
+            width: 35rem;
+            height: 6rem;
+            border: 6px solid #6aa8ff;
+            border-radius: 9px;
+            background: aliceblue;
+            box-shadow: 7px 7px 5px 3px #b5b5b5;
+            margin-right: 35px;
+            font-size: 30px;
+            font-family: 'Balsamiq Sans', cursive;
+            text-transform: capitalize;
+        }
+
+        .up #button {
+            font-size: 20px;
+            padding: 10px 22px;
+            border: 6px solid black;
+            background: #84bbff;
+            font-family: 'Balsamiq Sans', cursive;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+         .up h1,#head {
+            font-size: 54px;
+            font-family: 'Balsamiq Sans', cursive;
+            color: #0066ff;
+            margin-left: 34px;
+        }
+
+        .middle {
+            width: 100%;
+            height: 50vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            place-items: center;
+
+        }
+
+        .cardone,
+        .cardtwo,
+        .cardthree {
+            width: 30rem;
+            height: 30rem;
+            /* background-color: aqua; */
+            box-shadow: 10px 10px 10px 10px rgb(150, 150, 150);
+            border: 7px solid rgb(28, 202, 255);
+            border-radius: 11px;
+        }
+        .middle h1{
+            font-size: 42px;
+    margin-left: 45px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #6e78f7;
+        }
+        .middle p{
+            margin: 30px 6px;
+    font-size: 29px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    color: #4c4c93;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="up">
+        <h1>
+            Weather App
+        </h1>
+        <div class="likho">
+            <input type="search" id="input">
+            <input type="button" value="Search" id="button">
+        </div>
+    </div>
+    <h1 id="head" style="    color: #2727f3;">Weather for <span id="value">___________</span></h1>
+    <div class="middle">
+        <div class="cardone">
+            <h1>Temp Info</h1>
+<p>Temperature : <span id="temp"></span> °C</p>
+<p>Max Temperature : <span id="max_temp"></span> °C</p>
+<p>Min Temperature : <span id="min_temp"></span> °C</p>
+        </div>
+        <div class="cardtwo">
+<h1>Wind Info</h1>
+<p>Wind Speed : <span id="wind_speed"></span> m/s</p>
+<p>Wind Degrees : <span id="wind_degrees"></span> °</p>
+<p>Humidity : <span id="humidity"></span> %</p>
+ 
+        </div>
+        <div class="cardthree">
+<h1>Sun Info</h1>
+<p>Sunrise : <span id="sunrise" style="font-size: 21px;"></span></p>
+<p>Sunset : <span id="sunset" style="font-size: 21px;"></span></p>
+
+ 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
